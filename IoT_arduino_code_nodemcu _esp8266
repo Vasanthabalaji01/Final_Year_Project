@@ -1,0 +1,121 @@
+#include "ThingSpeak.h"
+#include <ESP8266WiFi.h>
+#include <MCP3008.h>
+char ssid[] = "";   // your network SSID (name)
+char pass[] = "";   // your network password
+int keyIndex = 0;            // your network key Index number (needed only for WEP)
+WiFiClient  client;
+
+unsigned long myChannelNumber =   ; // ChannelNumber
+const char * myWriteAPIKey = ""; // WriteAPIKey
+
+
+
+// define pin connections
+#define CS_PIN D8
+#define CLOCK_PIN D5
+#define MOSI_PIN D7
+#define MISO_PIN D6
+
+int buzzer =D0;
+int led_g1 =D1;
+int led_g2 =D2;
+int led_r1 =D3;
+int led_r2 =D4;
+
+//int x_axis =2;
+// put pins inside MCP3008 constructor
+MCP3008 adc(CLOCK_PIN, MOSI_PIN, MISO_PIN, CS_PIN);
+
+
+void setup()
+{
+  pinMode(buzzer,OUTPUT);
+  pinMode(led_g1,OUTPUT);
+  pinMode(led_g2,OUTPUT);
+  pinMode(led_r1,OUTPUT);
+  pinMode(led_r2,OUTPUT);
+
+  digitalWrite(buzzer,LOW);
+  digitalWrite(led_g1,HIGH);
+  digitalWrite(led_g2,HIGH);
+  digitalWrite(led_r1,LOW);
+  digitalWrite(led_r2,LOW);
+     
+  Serial.begin(9600);  // Initialize serial
+  WiFi.mode(WIFI_STA);
+  ThingSpeak.begin(client);  // Initialize ThingSpeak
+  // Connect or reconnect to WiFi
+  if (WiFi.status() != WL_CONNECTED)
+  {
+    Serial.print("Attempting to connect to SSID: ");
+    Serial.println(ssid);
+    while (WiFi.status() != WL_CONNECTED)
+    {
+      WiFi.begin(ssid, pass);  // Connect to WPA/WPA2 network. Change this line if using open or WEP network
+      Serial.print(".");
+      delay(5000);
+    }
+    Serial.println("\nConnected.");
+  }
+}
+
+void loop()
+{
+  int heart = adc.readADC(0); 
+  int temp = adc.readADC(1);
+  int x_axis = adc.readADC(2);
+  Serial.print("Heart rate :");
+  Serial.println(heart);
+  Serial.print("Temperature :");
+  Serial.println(temp);
+  Serial.print("X_axis :");
+  Serial.println(x_axis);
+
+  if(x_axis < 900)
+  {
+    digitalWrite(buzzer,HIGH);
+  }
+  else
+  {
+    digitalWrite(buzzer,LOW);
+  }
+  if(heart > 700)
+  {
+    digitalWrite(led_r1,HIGH);
+    digitalWrite(led_g1,LOW);
+  }
+  else
+  {
+    digitalWrite(led_r1,LOW);
+    digitalWrite(led_g1,HIGH);
+  }
+    if(temp > 120)
+  {
+    digitalWrite(led_r2,HIGH);
+    digitalWrite(led_g2,LOW);
+  }
+  else
+  {
+    digitalWrite(led_r2,LOW);
+    digitalWrite(led_g2,HIGH);
+  }
+  
+    ThingSpeak.setField(1, heart);
+    ThingSpeak.setField(2, temp);
+    ThingSpeak.setField(3, x_axis);
+     
+
+    // write to the ThingSpeak channel
+    int x = ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey );
+    if (x == 200)
+    {
+      Serial.println("Channel update successful.");
+    }
+    else
+    {
+      Serial.println("Problem updating channel. HTTP error code " + String(x));
+    }
+
+    delay(10000); // Wait 20 seconds to update the channel again
+  }
