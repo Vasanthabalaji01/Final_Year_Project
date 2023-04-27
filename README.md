@@ -33,7 +33,7 @@ for many services applications, also using Node MCU not just as a sensor node bu
 also a controller here. Paper proposes a generic health monitoring system as a step
 forward to the progress made in this department till now.
 
-<h1>Amazon Lightsail is a virtual private server (VPS) provider and is the easiest way...</h1>
+<h1>Amazon Lightsail</h1> Lightsail is a virtual private server (VPS) provider and is the easiest way...
 <br>
 To get started with AWS for <br> 
  >developers <br>
