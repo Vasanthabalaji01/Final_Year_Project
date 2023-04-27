@@ -57,7 +57,7 @@ artists to product prototypes<br>
 <h3>Arduino IDE</h3>
 The Arduino Integrated Development Environment (IDE) is the main text editing program used for Arduino programming. 
 It is where you’ll be typing up your code before uploading it to the board you want to program. 
-Arduino code is referred to as <h4>sketches</h4>.
+Arduino code is referred to as sketches.
 
 <h4>Arduino Code libraries</h4>
 Library Structure<br>
