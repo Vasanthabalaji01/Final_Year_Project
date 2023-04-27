@@ -44,3 +44,7 @@ To get started with AWS for <br>
 Lightsail provides developers compute, storage, and networking capacity and capabilities to deploy and manage websites and web applications in the cloud.<br> 
 It includes everything you need to launch your project quickly – virtual machines, containers, databases, CDN, load balancers, DNS management etc.<br>
 for a low, predictable monthly price.<br>
+
+<h2>ESP3266</h2>
+The ESP32 is a dual-core microcontroller with Wi-Fi and Bluetooth connection, making it the perfect choice for Internet of Things applications that need both wireless technologies.<br>
+It contains a 512 KB RAM and a 32-bit LX6 microcontroller with a maximum clock speed of 240 MHz. I2C, SPI, UART, and GPIO are just a few of the peripheral interfaces the ESP32 offers. It also supports a number of different protocols like CAN and Ethernet.<br>
