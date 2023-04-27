@@ -84,3 +84,11 @@ Reference code:<br>
 https://github.com/vasanthabalaji45/Final_Year_Project/blob/main/IoT_arduino_code_nodemcu%20_esp8266
 
 <h2>Thinkcloud</h2>
+Data processing, storage, and visualisation are all part of the Internet of Things (IoT) in education.
+Learning cloud analytics and imparting IoT are made simple by Thing Speak simple user interface. 
+Use the Thing Speak communities to provide services with cloud . Furthermore, Arduino, RPI, and other hardware are supported by and integrated into ThingSpeakcloud. 
+
+Instant visualisations of data posted by your equipment or devices
+Use ThingSpeak to run MATLAB code, perform real-time analysis and data processing, and view automated visualisations.
+Build Internet of Things solutions without installing servers or creating web applications.
+
