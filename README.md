@@ -48,3 +48,35 @@ for a low, predictable monthly price.<br>
 <h2>ESP3266</h2>
 The ESP32 is a dual-core microcontroller with Wi-Fi and Bluetooth connection, making it the perfect choice for Internet of Things applications that need both wireless technologies.<br>
 It contains a 512 KB RAM and a 32-bit LX6 microcontroller with a maximum clock speed of 240 MHz. I2C, SPI, UART, and GPIO are just a few of the peripheral interfaces the ESP32 offers. It also supports a number of different protocols like CAN and Ethernet.<br>
+<h2>Arduino</h2>
+The Arduino ecosystem is comprised of a diverse combination of hardware and software.
+The versatility of Arduino and its simple interface makes it a leading choice for a wide range of users around the world from 
+hobbyists<br> 
+designers<br>
+artists to product prototypes<br>
+<h3>Arduino IDE</h3>
+The Arduino Integrated Development Environment (IDE) is the main text editing program used for Arduino programming. 
+It is where you’ll be typing up your code before uploading it to the board you want to program. 
+Arduino code is referred to as <h4>sketches</h4>.
+
+<h4>Arduino Code libraries</h4>
+Library Structure<br>
+A library is a folder comprised of files with C++ (.cpp) code files and C++ (.h) header files.<br>
+The .h file describes the structure of the library and declares all its variables and functions.<br>
+The .cpp file holds the function implementation.<br>
+
+<h4>Importing Libraries</h4>
+The first thing you need to do is find the library you want to use out of the many libraries available online. After downloading it to your computer, you just need to open Arduino IDE<br>
+click on Sketch > Include Library > Manage Libraries. 
+You can then select the library that you want to import into the IDE. Once the process is complete the library will be available in the sketch menu.<br>
+In the code provided by circuito.io instead of adding external libraries like mentioned before, we provide them with the firmware folder.
+In this case, the IDE knows how to find them when using #include.<br>
+.<br>
+From Software to Hardware<br>
+.<br>
+There is a lot to be said of Arduino’s software capabilities, but it’s important to remember that the platform is comprised of both software and hardware. 
+<br>
+The two work in tandem to run a complex operating system.
+<br>
+Code →  Compile → Upload →  Run 
+<br>
