@@ -33,3 +33,14 @@ for many services applications, also using Node MCU not just as a sensor node bu
 also a controller here. Paper proposes a generic health monitoring system as a step
 forward to the progress made in this department till now.
 
+Amazon Lightsail is a virtual private server (VPS) provider and is the easiest way...
+
+To get started with AWS for 
+ >> developers
+ >> small businesses
+ >> students
+ >> users who need a solution to build and host their applications on cloud. 
+
+Lightsail provides developers compute, storage, and networking capacity and capabilities to deploy and manage websites and web applications in the cloud. 
+It includes everything you need to launch your project quickly – virtual machines, containers, databases, CDN, load balancers, DNS management etc.
+for a low, predictable monthly price.
