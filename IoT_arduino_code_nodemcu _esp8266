@@ -62,8 +62,8 @@ void setup()
 
 void loop()
 {
-  int heart = adc.readADC(0); 
-  int temp = adc.readADC(1);
+  int heart = adc.readADC(0) * 0.1875; // Convert ADC value to mV and then to beats per minute (BPM)	65	int heart = adc.readADC(0);
+  int temp = adc.readADC(1) * 0.1875; // Convert ADC value to mV and then to degrees Celsius	66	int temp = adc.readADC(1);
   int x_axis = adc.readADC(2);
   Serial.print("Heart rate :");
   Serial.println(heart);
