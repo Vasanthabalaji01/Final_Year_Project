@@ -45,6 +45,9 @@ Lightsail provides developers compute, storage, and networking capacity and capa
 It includes everything you need to launch your project quickly – virtual machines, containers, databases, CDN, load balancers, DNS management etc.<br>
 for a low, predictable monthly price.<br>
 
+![image](https://user-images.githubusercontent.com/110226727/235321774-8a2746a0-b11a-4a52-b07a-11b388fee588.png)
+
+
 <h2>ESP3266</h2>
 The ESP32 is a dual-core microcontroller with Wi-Fi and Bluetooth connection, making it the perfect choice for Internet of Things applications that need both wireless technologies.<br>
 It contains a 512 KB RAM and a 32-bit LX6 microcontroller with a maximum clock speed of 240 MHz. I2C, SPI, UART, and GPIO are just a few of the peripheral interfaces the ESP32 offers. It also supports a number of different protocols like CAN and Ethernet.<br>
@@ -58,6 +61,11 @@ artists to product prototypes<br>
 The Arduino Integrated Development Environment (IDE) is the main text editing program used for Arduino programming. 
 It is where you’ll be typing up your code before uploading it to the board you want to program. 
 Arduino code is referred to as sketches.
+
+<h4>Circuit Diagram<h/4>
+
+![image](https://user-images.githubusercontent.com/110226727/235321727-d220815c-969c-4e0e-9725-90222fdece14.png)
+
 
 <h4>Arduino Code libraries</h4>
 Library Structure<br>
@@ -92,3 +100,8 @@ Instant visualisations of data posted by your equipment or devices
 Use ThingSpeak to run MATLAB code, perform real-time analysis and data processing, and view automated visualisations.
 Build Internet of Things solutions without installing servers or creating web applications.
 
+ <h4>view of site</h4>
+ ![image](https://user-images.githubusercontent.com/110226727/235321762-e8d9bb55-89de-468c-828e-f6774679117e.png)
+
+ 
+ 
