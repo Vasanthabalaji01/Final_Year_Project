@@ -105,5 +105,17 @@ Build Internet of Things solutions without installing servers or creating web ap
  
  ![image](https://user-images.githubusercontent.com/110226727/235321762-e8d9bb55-89de-468c-828e-f6774679117e.png)
 
- 
- 
+ <h1>Hardware</h1>
+ <h2>SHM-IOT</h2>
+
+🟢
+
+![image](https://github.com/Vasanthabalaji01/Final_Year_Project/blob/main/normal.jpg)
+
+🔴
+
+![image](https://github.com/Vasanthabalaji01/Final_Year_Project/blob/main/abnormal.jpg)
+
+<h1>Demo video</h1>
+
+<a href="https://drive.google.com/file/d/1SFScUGzFb87ean9VRxnEfEm4BpsGqVhb/view?usp=sharing">🎥</a>
