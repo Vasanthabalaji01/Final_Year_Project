@@ -6,6 +6,8 @@ This project leverages IoT technology to monitor vital health parameters such as
 ## Benefits and Applications
 The system enhances healthcare delivery through remote patient monitoring, facilitating timely interventions and improving patient outcomes. It can be expanded with additional sensors for broader medical applications, making it suitable for both hospital and home-care settings, especially for elderly care.
 
+## Resourche Paper [📃](https://www.ijnrd.org/papers/IJNRD2305479.pdf)
+
 ## Technology Stack
 - **ESP32/ESP8266**: Utilized for wireless data transmission and control.
 - **Arduino IDE**: Development environment for programming Arduino boards.
