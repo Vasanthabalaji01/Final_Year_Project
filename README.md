@@ -10,8 +10,6 @@ The system enhances healthcare delivery through remote patient monitoring, facil
 - **ESP32/ESP8266**: Utilized for wireless data transmission and control.
 - **Arduino IDE**: Development environment for programming Arduino boards.
 - **Amazon Lightsail**: Cloud platform providing virtual private servers for hosting applications and managing web services.
-<img src="https://user-images.githubusercontent.com/110226727/235321774-8a2746a0-b11a-4a52-b07a-11b388fee588.png">
-
 - **ThingSpeak**: IoT platform for real-time data storage, processing, and visualization.
 
 ## Features
@@ -21,12 +19,19 @@ The system enhances healthcare delivery through remote patient monitoring, facil
 - Expandable architecture for future sensor integrations and enhancements.
 
 ## Circuit Diagram
-![Circuit Diagram](https://user-images.githubusercontent.com/110226727/235321727-d220815c-969c-4e0e-9725-90222fdece14.png)
+<img src="https://user-images.githubusercontent.com/110226727/235321727-d220815c-969c-4e0e-9725-90222fdece14.png" width="480">
 
 ## Demo Video
 Watch the system in action: [Demo Video](https://drive.google.com/file/d/1SFScUGzFb87ean9VRxnEfEm4BpsGqVhb/view?usp=sharing)
 
 ## Project Images
+
+### AWS Cloud Service
+<img src="https://user-images.githubusercontent.com/110226727/235321774-8a2746a0-b11a-4a52-b07a-11b388fee588.png" width="480">
+
+### View of Site
+<img src="https://user-images.githubusercontent.com/110226727/235321762-e8d9bb55-89de-468c-828e-f6774679117e.png" width="480">
+
 ### Normal Condition
 <img src="https://github.com/Vasanthabalaji01/Final_Year_Project/blob/main/normal.jpg" width="320" height="200">
 
